@@ -1,0 +1,18 @@
+const shoppingList = ['pizza', 'chips', 'salsa', 'coffee'];
+const cart = [];
+
+// TODO: add 'apples' to the end of the shoppingList
+shoppingList.push ('apples');
+// TODO: add 'bread' to the front of the shoppingList
+shoppingList.unshift ('bread');
+// TODO: use indexOf to replace 'coffee' with 'tea'
+shoppingList.splice (4,1, 'tea');
+// TODO: use splice to replace `chips` and `salsa` with `rice` and `beans`
+
+shoppingList.splice (2,2, 'rice', 'beans');
+// TODO: put the first and the last items from your shoppingList into your cart
+
+cart.splice (-2, 0, 'apples', 'bread')
+// now let's see what we got
+console.log('\nshoppingList:', shoppingList);
+console.log('cart:', cart);
